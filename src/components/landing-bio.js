@@ -11,7 +11,7 @@ const OuterContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   height: 78vh;
 `
 
@@ -20,7 +20,11 @@ const Description = styled.p`
   margin-bottom: 1rem;
   font-size: 1.4rem;
 `
-
+const About = styled.p`
+  padding: 1rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+`
 const NameHeader = styled.h1`
   font-size: 3.5rem;
   margin-bottom: 0;
@@ -43,6 +47,7 @@ const LandingBio = () => (
           <NameHeader>{data.site.siteMetadata.title}</NameHeader>
           <Description>Software Developer</Description>
         </Container>
+        <About> React.js, Express, Apollo, Node.js, NoSQL </About>
       </OuterContainer>
     )}
   />
